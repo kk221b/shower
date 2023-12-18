@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Shower Presentation Engine</h1>
+        <p>Yours Truly, Famous Inc.</p>
+    </header>
+
+
+    <section class="slide" id="cover-slide">
+        <h2>Компьютерная графика и анимация в кино. Разработка и наложение эффектов</h2>
+        <p>Кабисова К. ИУЗ-31М</p>
+
+        <style>
+
+            .slide {
+                position: absolute;
+                background-image: url('pictures/bckg_img.png');
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                text-align: left;
+                font-family: 'Arial', sans-serif;
+                padding: 25px;
+                overflow: hidden;
+            }
+
+            .slide h2 {
+
+                padding: 100px 150px 0 0;
+                color: white;
+                font-size: 70px;
+            }
+
+            .slide p {
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+                margin: 0;
+                font-style: italic;
+                font-size: 30px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="contents-slide">
+        <style>
+
+            #contents-slide ul {
+                list-style: none;
+                padding-left: 25px;
+                font-size: 24px;
+                line-height: 1.8;
+            }
+
+        </style>
+
+        <h1>Содержание</h1>
+        <ul>
+            <li>Введение</li>
+            <li>Что такое VFX</li>
+            <li>Виды визуальных эффектов в фильме</li>
+            <li>Что такое CGI-графика</li>
+            <li>Инструменты и программное обеспечение</li>
+            <li>Композиция и зеленый экран VFX</li>
+            <li>Что такое и как работает Motion Capture</li>
+            <li>Заключение</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="introduction-slide">
+        <style>
+
+
+            #introduction-slide p {
+                font-size: 20px;
+                margin: 20px 20px -15px 0;
+                text-align: left;
+            }
+
+            #introduction-slide .animation-images {
+                display: flex;
+                justify-content: space-around;
+                align-items: left;
+                margin-top: 10px;
+            }
+                #introduction-slide img {
+                width: 440px;
+                height: auto;
+            }
+
+            #introduction-slide figcaption {
+                font-size: 20px;
+                padding-left: 20px;
+            }
+        </style>
+
+        <h1>Введение</h1>
+        <p>Компьютерная анимация - процесс создания анимированных изображений с помощью компьютерной графики.</p>
+        <div class="animation-images" >
+            <figure>
+                <img src="pictures/2d_animation_image.png" alt="2D анимация">
+                <figcaption>2D анимация</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/3d_animation_image.png" alt="3D анимация" sizes="">
+                <figcaption>3D анимация</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide" id="vfx-definition-slide">
+        <style>
+            #vfx-definition-slide {
+                background-image:url('pictures/vfx_def.png');;
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            #vfx-definition-slide h2 {
+            font-size: 50px;
+            padding: 20px;
+            width: 80%;
+            margin: 0;
+        }
+            #vfx-definition-slide p {
+            font-size: 22px;
+            padding: 40px 0 40px 75px;
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        </style>
+
+        <h2>Что такое VFX. Определение термина.</h2>
+        <p>Визуальные эффекты (VFX) - это термин, используемый для описания изображений, созданных или улучшенных для любого фильма</p>
+    </section>
+
+    <section class="slide" id="types-vfx">
+        <style>
+
+            #types-vfx ul {
+                list-style: none;
+                padding-left: 25px;
+                font-size: 24px;
+                line-height: 1.8;
+            }
+
+
+        </style>
+
+        <h2>Виды визуальных эффектов в фильме</h2>
+        <ul>
+            <li>- CGI -</li>
+            <li>- Композитинг -</li>
+            <li>- Захват движения -</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cgi-slide">
+        <style>
+            #cgi-slide {
+                background-image: url('pictures/sl_6.png');
+                background-position: center;
+                color: #fff;
+                text-align: left;
+                font-family: 'Arial', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 50px;
+            }
+
+            #cgi-slide h1 {
+                margin-top: 10px;
+            }
+
+            #cgi-slide p {
+                font-size: 16px;
+                margin-bottom: 25px;
+                max-width: 500px;
+            }
+        </style>
+
+        <h1>Что такое CGI-графика</h1>
+        <p>CGI (от англ. Computer-Generated Imagery) — это изображения, сгенерированные с помощью компьютера. К CGI относят трёхмерную и двумерную компьютерную графику, с помощью которой создают персонажей, сцены и спецэффекты в фильмах, на телевидении, в рекламе и в играх.</p>
+    </section>
+
+    <section class="slide" id="cgi-creation-stages">
+        <style>
+
+
+            #cgi-creation-stages h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            #cgi-creation-stages .figures {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            #cgi-creation-stages figure {
+                width: 30%;
+            }
+
+            #cgi-creation-stages img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            #cgi-creation-stages figcaption {
+
+                font-size: 18px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+        </style>
+
+        <h1>Этапы создания CGI</h1>
+        <div class="figures">
+            <figure>
+                <img src="pictures/sl_7_1.png" alt="Сценарий и раскадровка">
+                <figcaption>Сценарий и раскадровка</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/sl_7_2.png" alt="Подбор референсов">
+                <figcaption>Подбор референсов</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/sl_7_3.png" alt="Разработка дизайна персонажей и фонов">
+                <figcaption>Разработка дизайна персонажей</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide" id="cgi-creation-stages_">
+
+        <style>
+
+
+            #cgi-creation-stages_ h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            #cgi-creation-stages_ .figures {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            #cgi-creation-stages_ figure {
+                width: 30%;
+            }
+
+            #cgi-creation-stages_ img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            #cgi-creation-stages_ figcaption {
+                font-size: 20px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+        </style>
+
+        <h1>Этапы создания CGI</h1>
+        <div class="figures">
+            <figure>
+                <img src="pictures/sl_8_1.png" alt="Сценарий и раскадровка">
+                <figcaption>Визуализация</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/sl_8_2.png" alt="Подбор референсов">
+                <figcaption>Чистовая анимация</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/sl_8_3.png" alt="Разработка дизайна персонажей и фонов">
+                <figcaption>Композитинг</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide" id="sl-9">
+
+        <style>
+
+
+            #sl-9 h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            #sl-9  img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        </style>
+
+        <h1>Инструменты и программное обеспечение </h1>
+        <img src="pictures/sl_9.png" alt="Инструменты">
+    </section>
+
+    <section class="slide" id="compositing-vfx">
+        <style>
+            #compositing-vfx {
+                background-image: url('pictures/sl_10.png');
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #compositing-vfx h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+        </style>
+
+        <h2>Композиция и зеленый экран VFX</h2>
+
+    </section>
+
+    <section class="slide" id="sl-11">
+    <style>
+
+
+        #sl-11 h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        #sl-11 ul {
+            list-style-type: none; /* Убрать маркеры списка */
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        #sl-11 li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #sl-11 .images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        #sl-11 img {
+            width: 48%; /* Примерно половина ширины родительского элемента */
+            height: auto; /* Высота будет автоматически рассчитана */
+            margin: 0 1%; /* Небольшой отступ для центровки */
+        }
+
+        #sl-11 figcaption {
+            font-size: 11px;
+            color: #aaa;
+            text-align: center;
+        }
+    </style>
+
+    <h2>Композиция и зеленый экран VFX</h2>
+    <ul>
+        <li>Искусство композитинга определяется объединением нескольких изображений в одно изображение</li>
+        <li>Одним из примеров этого может быть использование двойной экспозиции, как в все еще удивительной начальной последовательности для True Detective.</li>
+        <li>Самым известным методом композитинга является съемка с зеленым экраном. Этот процесс называется chroma keying, сплошной цвет фона заменяется новым фоновым изображением.</li>
+    </ul>
+</section>
+
+
+    <section class="slide" id="sl-12">
+        <style>
+            #sl-12 {
+                background-image: url('pictures/sl_12.png');
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #sl-12 h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+        </style>
+
+        <h2>Визуальные эффекты захвата движенияX</h2>
+
+    </section>
+
+    <section class="slide" id="motion-capture-slide">
+        <style>
+            #motion-capture-slide {
+
+                font-family: 'Arial', sans-serif;
+                text-align: left;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            #motion-capture-slide h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            #motion-capture-slide ul {
+                list-style-type: none; /* Убрать маркеры списка */
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            #motion-capture-slide li {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+
+
+        </style>
+
+        <h2>Что такое и как работает Motion Capture</h2>
+        <ul>
+            <li>Костюм с набором специальных датчиков</li>
+            <li>Средства регистрации в виде различных камер/регистраторов</li>
+            <li>Софт для сбора и обработки информации</li>
+        </ul>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="slide" id="last">
+        <style>
+            #last {
+
+                color: #fff;
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #compositing-vfx h2 {
+                font-size: 50px;
+            }
+        </style>
+
+        <h2>Спасибо за внимание. </h2>
+
+    </section>
+
+
+
+
+
+
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+
+</body>
+</html>
